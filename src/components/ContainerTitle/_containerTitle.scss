@@ -1,0 +1,20 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.containerTitle {
+    width: 100%;
+    height: auto;
+
+    &__title {
+        margin: 1.13rem 3.8rem;
+        font-size: 3rem;
+        font-family: $roboto-font;
+        font-weight: $roboto-font-weight-300;
+    }
+
+    &__line {
+        max-width: 12%;
+        height: 10px;
+        background: $color-black;
+    }
+}

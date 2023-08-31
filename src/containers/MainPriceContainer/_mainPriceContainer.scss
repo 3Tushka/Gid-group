@@ -1,0 +1,73 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.mPrice {
+    width: 100%;
+    height: auto;
+
+    border-bottom: 1px solid $color-gray-white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    gap: 2.25rem;
+
+    margin: 3.5rem 0;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: $roboto-font;
+
+        &__title {
+            max-width: 52rem;
+            font-size: 3rem;
+            font-weight: $roboto-font-weight-400;
+            line-height: normal;
+        }
+
+        &__text {
+            max-width: 51rem;
+            font-size: 2.25rem;
+            font-weight: $roboto-font-weight-300;
+            line-height: 147%;
+            color: $color-light-gray;
+
+            margin: 3rem 0 9rem;
+        }
+
+        &__svgFigure {
+            max-width: 38rem;
+        }
+
+        &__bonuses {
+            margin: 2.23rem 4.18rem;
+        }
+    }
+
+
+    &__bonusesTitle {
+        font-size: 2.25rem;
+        font-weight: $roboto-font-weight-400;
+        line-height: 147%;
+    }
+
+    &__list {
+        list-style: square;
+        padding: 0 1rem;
+
+        &__item {
+            color: $color-light-gray;
+            font-size: 2.25rem;
+            font-weight: $roboto-font-weight-400;
+            line-height: 147%;
+        }
+    }
+
+    &__container:nth-child(2) {
+        border-left: 0.5px solid $color-gray-white;
+    }
+}

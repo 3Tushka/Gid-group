@@ -1,0 +1,49 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.addInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    max-width: 20rem;
+
+    &__titleNumber {
+        color: $color-black;
+        font-family: $roboto-font;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: $roboto-font-weight-500;
+
+        line-height: normal;
+    }
+
+
+    &__title {
+        color: $color-black;
+        font-family: $roboto-font;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: $roboto-font-weight-300;
+        line-height: normal;
+
+        h5:before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            padding: 0 5px 10px;
+            background: #000000;
+        }
+    }
+
+    &__content {
+
+        color: $color-black;
+        font-family: $roboto-font;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: $roboto-font-weight-300;
+        line-height: normal;
+    }
+}

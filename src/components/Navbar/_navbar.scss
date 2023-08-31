@@ -1,0 +1,98 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+
+.navbar {
+    width: 100%;
+    height: 8.0375rem;
+    flex-shrink: 0;
+
+    padding: 0 6.44rem;
+
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        z-index: 5;
+    }
+
+    &__contactPhone {
+        z-index: 5;
+    }
+
+    &__box {
+
+        &__links {
+            display: flex;
+            gap: 15px;
+            padding: 15px 0;
+
+            li {
+                font-family: $roboto-font;
+                font-weight: $roboto-font-weight-400;
+                font-size: 1.2rem;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                a:hover {
+                    border-bottom: 3px solid $color-red;
+                }
+            }
+        }
+
+        .navbar__toggleMenu_overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgb(0, 0, 0);
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.6488970588235294) 0%, rgba(0, 0, 0, 1) 100%);
+            flex-direction: column;
+            z-index: 2;
+
+            padding: 2.72rem 6.44rem;
+
+            .navbar-content {
+                display: flex;
+                justify-content: center;
+                margin-top: 5rem;
+
+                &__links {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    gap: 2rem;
+
+                    li {
+
+                        padding: 1.25rem 4.81rem;
+                        border: 1px solid rgba($color-black, 0);
+                        transition: 0.2s;
+
+                        a {
+                            color: $color-white;
+                            font-family: $roboto-font;
+                            font-weight: $roboto-font-weight-500;
+
+                            text-decoration: none;
+
+                            font-size: 2.2rem;
+                        }
+                    }
+
+                    li:hover {
+                        border: 1px solid $color-light-gray;
+                    }
+                }
+            }
+        }
+    }
+}

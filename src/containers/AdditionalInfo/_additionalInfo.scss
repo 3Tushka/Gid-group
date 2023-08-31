@@ -1,0 +1,11 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.addInfo-wrapper {
+    background: $color-cream-white;
+    margin: 2.8rem 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2.3rem 6rem;
+}

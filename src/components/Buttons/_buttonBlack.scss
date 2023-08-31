@@ -1,0 +1,23 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.buttonBlack {
+    width: 22rem;
+    height: 5rem;
+
+    border: 1px solid $color-light-gray;
+    background: rgba(17, 17, 17, 0.60);
+
+    color: $color-white;
+
+    font-family: $roboto-font;
+    font-weight: $roboto-font-weight-300;
+    font-size: 1.5rem;
+
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.buttonBlack:hover {
+    background: rgba(17, 17, 17, 0.90);
+}

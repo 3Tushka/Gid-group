@@ -1,0 +1,47 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.header {
+    background: url('/src/assets/images/header-interier.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+
+        margin: 10% 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        gap: 5rem;
+
+        max-width: 45rem;
+    }
+
+    &__title {
+        color: $color-cream-white;
+        font-family: $roboto-font;
+        font-weight: $roboto-font-weight-300;
+        font-size: 5rem;
+        line-height: normal;
+
+        text-align: center;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        gap: 3rem;
+    }
+}

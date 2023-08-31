@@ -1,0 +1,15 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.workPlan {
+    padding: 7rem 12rem;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 5rem;
+
+    }
+
+    border-bottom: 1px solid $color-gray-white;
+}
