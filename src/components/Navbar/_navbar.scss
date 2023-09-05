@@ -95,4 +95,32 @@
             }
         }
     }
+
+    .navbar__loginPop_overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.06) 0%, rgba(0, 0, 0, 1) 100%);
+        display: flex;
+        justify-content: center;
+
+        z-index: 2;
+
+        padding: 6rem;
+
+        .loginPop-container {
+            background-color: rgb(254, 254, 254);
+            width: 67rem;
+            max-height: 37rem;
+
+            .navbar-close {
+                display: flex;
+                justify-content: end;
+
+                padding: 1.81rem 3.5rem;
+            }
+        }
+    }
 }

@@ -9,6 +9,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import './_navbar.scss';
 
 import NavLogo from '../../assets/svg/Logo.svg';
+import LoginPop from '../../containers/LoginPop/LoginPop';
 
 const LinksMenu = () => (
     <>
@@ -24,6 +25,8 @@ const LinksMenu = () => (
 const Navbar = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false);
+
+    const [toggleLogin, setToggleLogin] = useState(false);
 
     return (
         <nav className='navbar'>
@@ -53,7 +56,20 @@ const Navbar = () => {
             </div>
 
             <div className="navbar__contactPhone">
-                <PhoneIcon fontSize="large" style={{ color: '#fff' }} />
+                <PhoneIcon fontSize="large" style={{ color: '#fff' }} onClick={() => setToggleLogin(true)} />
+
+                <div className="navbar__loginPop">
+                    {toggleLogin && (
+                        <div className="navbar__loginPop_overlay">
+                            <div className="loginPop-container">
+                                <div className="navbar-close">
+                                    <CloseIcon fontSize='large' style={{ color: '#000' }} onClick={() => setToggleLogin(false)} className="close-icon" />
+                                </div>
+                                <LoginPop />
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
         </nav>
     )

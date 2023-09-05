@@ -1,0 +1,10 @@
+.instagramBlogItem {
+    max-width: 26rem;
+    height: auto;
+
+    &__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

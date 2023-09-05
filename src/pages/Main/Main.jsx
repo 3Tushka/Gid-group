@@ -5,6 +5,9 @@ import MainPriceContainer from '../../containers/MainPriceContainer/MainPriceCon
 import MainFavour from '../../containers/MainFavour/MainFavour'
 import WorkPlan from '../../containers/WorkPlan/WorkPlan'
 import Coach from '../../containers/Coach/Coach'
+import InstagramBlogGallery from '../../containers/InstagramBlogGallery/InstagramBlogGallery'
+import Footer from '../../components/Footer/Footer'
+import FormCatalog from '../../containers/FormCatalog/FormCatalog'
 
 export const Main = () => {
     return (
@@ -15,6 +18,9 @@ export const Main = () => {
             <MainFavour />
             <WorkPlan />
             <Coach />
+            <InstagramBlogGallery />
+            <FormCatalog />
+            <Footer />
         </>
     )
 }
