@@ -8,6 +8,7 @@ import Coach from '../../containers/Coach/Coach'
 import InstagramBlogGallery from '../../containers/InstagramBlogGallery/InstagramBlogGallery'
 import Footer from '../../components/Footer/Footer'
 import FormCatalog from '../../containers/FormCatalog/FormCatalog'
+import ContainerTitle from '../../components/ContainerTitle/ContainerTitle'
 
 export const Main = () => {
     return (
@@ -19,6 +20,7 @@ export const Main = () => {
             <WorkPlan />
             <Coach />
             <InstagramBlogGallery />
+            <ContainerTitle title={"Отримайте каталог наших проектів"} />
             <FormCatalog />
             <Footer />
         </>

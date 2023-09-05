@@ -1,0 +1,48 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.offers {
+    padding: 6rem 6.5rem;
+
+    border-bottom: 1px solid $color-gray-white;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        font-family: $roboto-font;
+    }
+
+    &__image {
+        max-width: 7.7rem;
+    }
+
+    &__title {
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        margin: 3rem 0 1.13rem;
+    }
+
+    &__content {
+        background: linear-gradient(90deg, $color-gray-white 30%, #ffffff 30%);
+        height: 18rem;
+
+        &__item {
+            margin: 1rem 0;
+
+            color: $color-gray;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+}

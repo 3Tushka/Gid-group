@@ -1,6 +1,5 @@
 import React from 'react'
 import './_formCatalog.scss'
-import ContainerTitle from '../../components/ContainerTitle/ContainerTitle'
 
 import formImage from '../../assets/images/form-image.png';
 
@@ -18,7 +17,6 @@ const initialValues = {
 const FormCatalog = () => {
     return (
         <>
-            <ContainerTitle title={"Отримайте каталог наших проектів"} />
             <div className="formCatalog">
                 <div className="formCatalog__wrapper">
                     <div className="formCatalog__container">

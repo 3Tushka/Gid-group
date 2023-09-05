@@ -18,6 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Main />} />
+          <Route path='/Main' element={<Main />} />
           <Route path='/Design' element={<Design />} />
           <Route path='/LandscapeDesign' element={<LandscapeDesign />} />
           <Route path='/Projects' element={<Projects />} />
