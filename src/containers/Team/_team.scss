@@ -1,0 +1,9 @@
+.team {
+    margin: 0 11rem;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 5rem;
+    }
+}

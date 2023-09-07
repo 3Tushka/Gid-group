@@ -9,14 +9,19 @@ import InstagramBlogGallery from '../../containers/InstagramBlogGallery/Instagra
 import Footer from '../../components/Footer/Footer'
 import FormCatalog from '../../containers/FormCatalog/FormCatalog'
 import ContainerTitle from '../../components/ContainerTitle/ContainerTitle'
+import Quiz from '../../containers/Quiz/Quiz'
+import MainProjects from '../../containers/MainProjects/MainProjects'
 
 export const Main = () => {
     return (
         <>
             <Header />
             <AdditionalInfo />
+            <Quiz />
             <MainPriceContainer />
             <MainFavour />
+            <ContainerTitle title={"Наші проекти"} />
+            <MainProjects />
             <WorkPlan />
             <Coach />
             <InstagramBlogGallery />

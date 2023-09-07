@@ -1,0 +1,43 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.projectItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    gap: 0.8rem;
+    font-family: $roboto-font;
+    text-decoration: none;
+
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        color: $color-black;
+        font-size: 1.5rem;
+    }
+
+    &__style {
+        color: $color-gray;
+
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__square {
+        color: $color-gray;
+
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}

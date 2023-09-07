@@ -1,0 +1,56 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.teamItem {
+    display: flex;
+
+    gap: 1.8rem;
+
+    &__image {
+        max-width: 220px;
+        height: auto;
+        border-radius: 220px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 220px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        font-family: $roboto-font;
+    }
+
+    &__name {
+        font-size: 1.75rem;
+        line-height: 147%;
+        color: $color-black;
+        font-weight: 500;
+    }
+
+    &__position {
+        color: $color-gray;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 147.687%;
+        /* 1.6615rem */
+
+        margin-bottom: 1.75rem;
+    }
+
+    &__text {
+        color: $color-gray;
+        font-size: 1.45rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 147.687%;
+
+        max-width: 24rem;
+        /* 2.5845rem */
+    }
+}
