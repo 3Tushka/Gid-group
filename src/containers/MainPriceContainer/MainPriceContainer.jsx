@@ -1,10 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react'
+import { useState } from 'react';
+
 import './_mainPriceContainer.scss';
 import ButtonBlack from '../../components/Buttons/ButtonBlack';
 import ContainerTitle from '../../components/ContainerTitle/ContainerTitle';
+import Quiz from '../Quiz/Quiz';
 
 const MainPriceContainer = () => {
+
+    const [toggleQuiz, setToggleQuiz] = useState(false)
+
     return (
         <>
             <ContainerTitle title={"Ціна проекту"} />
@@ -21,7 +27,11 @@ const MainPriceContainer = () => {
                         </span>
                     </div>
                     <div className="mPrice__container__testButton">
-                        <ButtonBlack title={"Дізнайте ціну"} />
+                        <ButtonBlack title={"Дізнайте ціну"} onClick={() => setToggleQuiz(true)} />
+
+                        {toggleQuiz &&
+                            <Quiz />
+                        }
                     </div>
                 </div>
                 <div className="mPrice__container">

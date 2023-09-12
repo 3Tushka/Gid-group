@@ -17,7 +17,6 @@ export const Main = () => {
         <>
             <Header />
             <AdditionalInfo />
-            <Quiz />
             <MainPriceContainer />
             <MainFavour />
             <ContainerTitle title={"Наші проекти"} />
