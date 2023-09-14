@@ -1,15 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react'
-import { useState } from 'react';
+import React, { useState } from 'react'
 
 import './_mainPriceContainer.scss';
 import ButtonBlack from '../../components/Buttons/ButtonBlack';
 import ContainerTitle from '../../components/ContainerTitle/ContainerTitle';
-import Quiz from '../Quiz/Quiz';
+
+import CloseIcon from '@mui/icons-material/Close';
+import Quiz from '../../containers/Quiz/Quiz'
 
 const MainPriceContainer = () => {
 
-    const [toggleQuiz, setToggleQuiz] = useState(false)
+    const [toggleQuiz, setToggleQuiz] = useState(false);
 
     return (
         <>
@@ -26,13 +27,23 @@ const MainPriceContainer = () => {
                             Пройдіть короткий тест, дійзнайтесь ціну, отримайте консультації по майбутньому проекту
                         </span>
                     </div>
-                    <div className="mPrice__container__testButton">
-                        <ButtonBlack title={"Дізнайте ціну"} onClick={() => setToggleQuiz(true)} />
 
-                        {toggleQuiz &&
-                            <Quiz />
-                        }
+                    <div className="mPrice__container__testButton" onClick={() => setToggleQuiz(true)}>
+                        <ButtonBlack title={"Дізнайте ціну"} />
                     </div>
+                </div>
+                <div className="mPrice__quiz">
+
+                    {toggleQuiz && (
+                        <div className="mPrice__quiz__overlay">
+                            <div className="mPrice__quiz__overlay__content">
+                                <div className="quiz-close">
+                                    <CloseIcon style={{ color: '#000' }} onClick={() => setToggleQuiz(false)} className="close-icon" />
+                                </div>
+                                <Quiz />
+                            </div>
+                        </div>
+                    )}
                 </div>
                 <div className="mPrice__container">
                     <div className="mPrice__container__svgFigure">

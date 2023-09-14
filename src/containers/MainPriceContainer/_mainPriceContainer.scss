@@ -70,4 +70,48 @@
     &__container:nth-child(2) {
         border-left: 0.5px solid $color-gray-white;
     }
+
+    &__quiz {
+        z-index: 10;
+
+        &__overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgb(0, 0, 0);
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.6488970588235294) 0%, rgba(0, 0, 0, 1) 100%);
+            z-index: 2;
+            padding: 2.72rem 6.44rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &__content {
+                width: 103rem;
+                height: 84vh;
+
+                background: $color-white;
+
+                .quiz-close {
+                    display: flex;
+                    justify-content: end;
+
+
+                    .close-icon {
+                        cursor: pointer;
+                        position: relative;
+                        top: 1.9rem;
+                        right: 2.67rem;
+
+                        z-index: 5;
+
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
 }

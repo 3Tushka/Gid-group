@@ -1,0 +1,23 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.questionTitle {
+    display: flex;
+    gap: 1rem;
+    margin-left: 8.75rem;
+
+    &__h2 {
+        font-style: $roboto-font;
+        font-weight: $roboto-font-weight-700;
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    &__text {
+        color: $color-gray;
+        font-family: $roboto-font;
+        font-size: 1.5rem;
+        font-weight: $roboto-font-weight-500;
+        line-height: normal;
+    }
+}
