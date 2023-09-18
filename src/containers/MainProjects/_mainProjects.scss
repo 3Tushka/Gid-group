@@ -1,10 +1,42 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
 .mainProjects {
     margin: 0 5rem;
     background: linear-gradient(90deg, #ffffff 38%, #e0e0e0 38%, );
 
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         gap: 3rem 0;
+    }
+
+    &__moreButton {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 3.75rem 0;
+
+        .button {
+            background: $color-black;
+            color: $color-cream-white;
+            text-align: center;
+            font-family: $roboto-font;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+
+            padding: 1.19rem 2.28rem;
+
+            border-radius: 0;
+        }
+
+        .button:hover {
+            background: $color-gray;
+        }
     }
 }

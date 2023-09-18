@@ -33,7 +33,42 @@
                 height: 150px;
                 clip-path: polygon(100% 0, 0% 100%, 100% 100%);
             }
+        }
 
+        &__upButton {
+            margin: 0 0 0 auto;
+            order: 3;
+            align-self: center;
+
+            .buttonTop {
+                transform: rotatez(-90deg);
+                margin: 20px;
+                padding: 1.31rem 1.41rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+
+                border: 1px solid $color-black;
+                background: none;
+
+                cursor: pointer;
+
+                transition: 0.2s;
+
+                span {
+                    font-family: $roboto-font;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+            }
+
+            .buttonTop:hover {
+                background: $color-cream-white;
+            }
         }
     }
 

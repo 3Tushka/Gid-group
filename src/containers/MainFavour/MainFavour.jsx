@@ -2,10 +2,10 @@ import React from 'react';
 import './_mainFavour.scss';
 import ContainerTitle from '../../components/ContainerTitle/ContainerTitle';
 
-import FavourDesign from '../../assets/images/design.png';
-import FavourRetail from '../../assets/images/retail.png';
-import FavourBuilding from '../../assets/images/buildings.png';
-import FavourLandDesign from '../../assets/images/landDesign.png';
+import FavourDesign from '../../assets/images/design.avif';
+import FavourRetail from '../../assets/images/retail.avif';
+import FavourBuilding from '../../assets/images/buildings.avif';
+import FavourLandDesign from '../../assets/images/landDesign.avif';
 
 const MainFavour = () => {
     return (

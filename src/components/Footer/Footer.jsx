@@ -4,17 +4,25 @@ import './_footer.scss';
 import FooterLogo from '../../assets/svg/Logo.svg';
 import SocialMedia from '../SocialMedia/SocialMedia';
 
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    };
+
     return (
         <footer className="footer">
             <div className="footer__upper">
                 <div className="footer__upper__bigTriangle" />
                 <div className="footer__upper__smallerBox">
                     <div className="footer__upper__smallerBox__triangle" />
-
                 </div>
                 <div className="footer__upper__upButton">
-                    f
+                    <button className='buttonTop' onClick={scrollToTop}>
+                        <span>Наверх</span> <ArrowForwardIcon fontSize='large' />
+                    </button>
                 </div>
             </div>
 

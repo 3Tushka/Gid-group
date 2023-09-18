@@ -1,7 +1,7 @@
 import React from 'react'
 import './_formCatalog.scss'
 
-import formImage from '../../assets/images/form-image.png';
+import formImage from '../../assets/images/form-image.avif';
 
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
