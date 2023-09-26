@@ -1,0 +1,45 @@
+@import '/src/utils/colors.scss';
+
+.workPlanRepair {
+    margin: 0 7rem;
+
+    &__line {
+        position: relative;
+        top: 23rem;
+
+        hr {
+            border-top: 5px dotted #000;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 5rem;
+
+        align-items: start;
+        justify-items: center;
+    }
+
+    &__button {
+        align-self: center;
+
+        .buttonBlack {
+            font-size: 2rem;
+            border: 2px solid black;
+            background: #ffffff;
+            color: #000;
+        }
+
+        .buttonBlack:hover {
+            font-size: 2rem;
+            border: 2px solid black;
+            background: #c0c0c06c;
+        }
+    }
+
+    .workPlanItem__title {
+        max-width: 60%;
+        background: linear-gradient(90deg, $color-yellow 30%, #ffffff 30%);
+    }
+}

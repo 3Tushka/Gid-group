@@ -1,0 +1,35 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.projectsSlider {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid $color-gray-white;
+
+    background: linear-gradient(90deg, #ffffff 38%, #F5F5F5 38%, );
+
+
+    .projects-slider {
+        margin: 0 5rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+
+        color: $color-black;
+        background: $color-yellow;
+        width: 4.125rem;
+        height: 4.125rem;
+        border-radius: 90px;
+
+        text-align: center;
+        font-family: $roboto-font;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+    }
+
+    .swiper-button-disabled {
+        display: none;
+    }
+}

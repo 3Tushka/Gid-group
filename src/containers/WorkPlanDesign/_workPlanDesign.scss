@@ -1,0 +1,56 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.workPlanDesign {
+    margin: 0 12.5rem;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        gap: 9rem 12rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.13rem;
+        font-family: $roboto-font;
+    }
+
+    &__header {
+        display: flex;
+
+        gap: 2.44rem;
+    }
+
+    &__image {
+        max-width: 8.3rem;
+        max-height: 7rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        color: #000;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 50%, rgba(255, 250, 0, 1) 100%);
+    }
+
+    &__content {
+        color: $color-gray;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 197.687%;
+        /* 2.47106rem */
+    }
+}

@@ -47,35 +47,38 @@
 
 
     // navigation buttons syles
+    &__buttons {
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        margin: 0 12rem;
 
-        width: 20rem;
-        height: 6rem;
+        .swiper-button-prev,
+        .swiper-button-next {
+            margin: 12rem;
 
-        padding: 1.56rem 7.25rem;
+            width: 20rem;
+            height: 6rem;
 
-        border: 1px solid $color-light-gray;
+            padding: 1.56rem 7.25rem;
 
-        color: $color-black;
+            border: 1px solid $color-light-gray;
 
-        text-align: center;
-        font-family: $roboto-font;
-        font-size: 2.25rem;
-        font-style: normal;
-        font-weight: 100;
-        line-height: normal;
-    }
+            color: $color-black;
 
-    .swiper-button-disabled {
-        display: none;
-    }
+            text-align: center;
+            font-family: $roboto-font;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 100;
+            line-height: normal;
+        }
 
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-        content: "";
+        .swiper-button-disabled {
+            display: none;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            content: "";
+        }
     }
 
     // paggination styles

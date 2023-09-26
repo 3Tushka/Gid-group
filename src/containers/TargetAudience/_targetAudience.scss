@@ -1,0 +1,68 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.targetAudience {
+    margin: 0 12rem 9rem;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 6.5rem;
+        font-family: $roboto-font;
+
+    }
+
+    &__h2 {
+        color: #000;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 146.687%;
+        /* 4.40063rem */
+        max-width: 87rem;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+
+        gap: 8.31rem;
+
+        list-style-type: square;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+
+        gap: 2.19rem;
+    }
+
+    &__column::before {
+        content: "";
+        display: inline-block;
+        width: 1.25rem;
+        height: 1.25rem;
+        padding: 0 5px 10px;
+        background: #000000;
+    }
+
+    &__list-title {
+        color: $color-dark-gray ;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 146.687%;
+        /* 2.20031rem */
+    }
+
+    &__list-content {
+        color: $color-gray;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 146.687%;
+        /* 1.83356rem */
+    }
+}
