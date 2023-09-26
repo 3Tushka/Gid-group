@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './_repairBlog.scss'
-import RepairBlogItem from './repairBlogItem/repairBlogItem'
+import RepairBlogItem from "/src/containers/RepairBlog/repairBlogItem/RepairBlogItem"
 
 import arrow from '/src/assets/svg/Arrow-rigth.svg'
 
