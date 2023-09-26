@@ -1,0 +1,77 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.slide-item {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.25rem;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &__avatar {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__avatar-info {
+        max-width: 23rem;
+
+        color: $color-gray;
+        font-family: $roboto-font;
+
+        &__name {
+            font-size: 1.75rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 147.687%;
+            /* 2.5845rem */
+        }
+
+        &__desc {
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 147.687%;
+            /* 1.6615rem */
+        }
+
+        &__text {
+            margin-top: 1.75rem;
+            font-size: 1.75rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 147.687%;
+            /* 2.5845rem */
+        }
+    }
+
+    &__image {
+
+        img {
+            border-radius: 150px;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+        max-width: 49rem;
+        color: $color-gray;
+        font-family: $roboto-font;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 198.187%;
+        /* 2.97281rem */
+    }
+}

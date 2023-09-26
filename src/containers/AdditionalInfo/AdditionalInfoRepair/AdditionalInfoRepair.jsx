@@ -1,15 +1,14 @@
 import React from 'react'
 import AdditionalInfoItem from '../../../components/AdditionalInfoItem/AdditionalInfoItem'
-
+import data from '../../../utils/data/data'
 
 const AdditionalInfoRepair = () => {
     return (
         <>
             <div className="addInfo-wrapper">
-                <AdditionalInfoItem titleNumber={"24/7"} title={"Ваш менеджер завжди на зв'язку"} />
-                <AdditionalInfoItem titleNumber={"Нагляд"} title={"На будівництві ведеться цілодобовий нагляд"} />
-                <AdditionalInfoItem titleNumber={"7 років"} title={"Гарантії на всі роботи"} />
-                <AdditionalInfoItem titleNumber={"Документація"} title={"Підготуємо та затвердимо проектну документацію"} />
+                {data?.infoRepair.map((infoItem, index) => (
+                    <AdditionalInfoItem key={index} titleNumber={infoItem.title} title={infoItem.content} />
+                ))}
             </div>
         </>
     )

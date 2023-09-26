@@ -1,0 +1,51 @@
+@import '/src/utils/colors';
+@import '/src/utils/fonts';
+
+.feedbackSlider {
+    height: 47rem;
+    margin: 0 0.5rem;
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 1.25rem;
+        height: 1.25rem;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: $color-light-gray;
+        border-radius: 0rem;
+        content: "";
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $color-black;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+
+        color: $color-black;
+        background: $color-yellow;
+        width: 4.125rem;
+        height: 4.125rem;
+        border-radius: 90px;
+
+        text-align: center;
+        font-family: $roboto-font;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: normal;
+    }
+
+    .swiper-button-disabled {
+        display: none;
+    }
+}

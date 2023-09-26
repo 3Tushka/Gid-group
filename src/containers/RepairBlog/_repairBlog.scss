@@ -1,0 +1,56 @@
+.repair-blog {
+    padding: 0 2.5rem 7rem;
+
+    border-bottom: 1px solid gray;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__line {
+        border-left: 2px solid #BDBDBD;
+        width: 0.0625rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        gap: 5.81rem;
+    }
+
+    &__link-button {
+        position: relative;
+        float: right;
+
+        button {
+            width: 22.75rem;
+            height: 5rem;
+            flex-shrink: 0;
+
+            background: none;
+            border: 1px solid #000;
+
+            color: #000;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.81rem;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #ebebeb77;
+        }
+    }
+}
