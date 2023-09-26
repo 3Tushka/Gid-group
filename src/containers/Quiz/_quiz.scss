@@ -6,6 +6,12 @@
     flex-direction: column;
     justify-content: center;
 
+    .swiper-wrapper {
+        width: 100%;
+        height: 20px;
+        display: flex;
+    }
+
     .mySwiper {
         width: 103rem;
         height: 80vh;
@@ -14,6 +20,7 @@
     .swiper-slide {
         text-align: center;
         font-size: 18px;
+        width: 103rem;
     }
 
     .swiper-slide--square {
@@ -40,35 +47,38 @@
 
 
     // navigation buttons syles
+    &__buttons {
 
-    .swiper-button-prev,
-    .swiper-button-next {
-        margin: 10% 12rem;
 
-        width: 20rem;
-        height: 6rem;
+        .swiper-button-prev,
+        .swiper-button-next {
+            margin: 12rem;
 
-        padding: 1.56rem 7.25rem;
+            width: 20rem;
+            height: 6rem;
 
-        border: 1px solid $color-light-gray;
+            padding: 1.56rem 7.25rem;
 
-        color: $color-black;
+            border: 1px solid $color-light-gray;
 
-        text-align: center;
-        font-family: $roboto-font;
-        font-size: 2.25rem;
-        font-style: normal;
-        font-weight: 100;
-        line-height: normal;
-    }
+            color: $color-black;
 
-    .swiper-button-disabled {
-        display: none;
-    }
+            text-align: center;
+            font-family: $roboto-font;
+            font-size: 2.25rem;
+            font-style: normal;
+            font-weight: 100;
+            line-height: normal;
+        }
 
-    .swiper-button-next::after,
-    .swiper-button-prev::after {
-        content: "";
+        .swiper-button-disabled {
+            display: none;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            content: "";
+        }
     }
 
     // paggination styles
@@ -103,5 +113,157 @@
 
     .swiper-pagination-bullet-active {
         background: $color-yellow;
+    }
+
+
+
+    // input form styles
+
+
+    // square radio buttons
+
+    .radioButton {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: 8rem;
+
+        &__label {
+            position: relative;
+            top: 50%;
+            z-index: 1;
+            font-family: $roboto-font;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__input {
+            border: 15px solid $color-gray;
+            width: 21rem;
+            height: 19.21rem;
+            margin: 0;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+            z-index: 2;
+        }
+
+        &__input:checked {
+            border: 15px solid $color-yellow;
+        }
+
+        &__input::before {
+            position: relative;
+            top: -50px;
+            right: 17px;
+            content: url("/src/assets/svg/arrow-upper.svg");
+        }
+
+        &__input::after {
+            position: relative;
+            top: -33px;
+            left: 21rem;
+            content: url("/src/assets/svg/arrow-side.svg");
+        }
+
+        &__input:checked::before {
+            content: url("/src/assets/svg/arrow-upper-checked.svg");
+        }
+
+        &__input:checked::after {
+            content: url("/src/assets/svg/arrow-side-checked.svg");
+        }
+    }
+
+    // style radio button
+
+    .style {
+
+        &__label {
+            margin: 20px 0;
+
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: 0.5rem;
+
+            /* HIDE RADIO */
+            [type=radio] {
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* IMAGE STYLES */
+            [type=radio]+img {
+                cursor: pointer;
+                width: 100%;
+                height: auto;
+            }
+
+            /* CHECKED STYLES */
+            [type=radio]:checked+img {
+                outline: 10px solid $color-yellow;
+                transform: scale(0.95);
+            }
+        }
+
+        &__image {
+            max-width: 26rem;
+            max-height: 10rem;
+            object-fit: cover;
+        }
+
+        span {
+            text-align: center;
+            font-family: $roboto-font;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+    }
+
+    .deadline {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+
+        &__label {
+            position: relative;
+            top: 50%;
+            left: -15%;
+            z-index: 1;
+            font-family: $roboto-font;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__input {
+            border: 3px solid $color-gray;
+            width: 90%;
+            height: 7.21rem;
+            margin: 0;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+            z-index: 2;
+        }
+
+        &__input:checked {
+            border-color: $color-yellow;
+        }
     }
 }

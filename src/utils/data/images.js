@@ -23,6 +23,34 @@ import ProjectFour from '/src/assets/images/projects/project (4).png';
 import ProjectFive from '/src/assets/images/projects/project (5).png';
 import ProjectSix from '/src/assets/images/projects/project (6).png';
 
+import EtapOne from '/src/assets/svg/etap.svg';
+import EtapTwo from '/src/assets/svg/etap (2).svg';
+import EtapThree from '/src/assets/svg/etap (3).svg';
+import EtapFour from '/src/assets/svg/etap (4).svg';
+import EtapFive from '/src/assets/svg/etap (5).svg';
+
+import FeedbackImage from '/src/assets/images/feedbackImage.png';
+
+import FeedbackAvatar from '/src/assets/images/feedbackAvatar.png';
+
+import HouseSvg from '/src/assets/svg/result (1).svg';
+import sandClockSvg from '/src/assets/svg/result (2).svg';
+import awardSvg from '/src/assets/svg/result (3).svg';
+import likeSvg from '/src/assets/svg/result (4).svg';
+
+import workPlanDesignItemOne from '/src/assets/svg/workPlanDesign (1).svg';
+import workPlanDesignItemTwo from '/src/assets/svg/workPlanDesign (2).svg';
+import workPlanDesignItemThree from '/src/assets/svg/workPlanDesign (3).svg';
+import workPlanDesignItemFour from '/src/assets/svg/workPlanDesign (4).svg';
+import workPlanDesignItemFive from '/src/assets/svg/workPlanDesign (5).svg';
+import workPlanDesignItemSix from '/src/assets/svg/workPlanDesign (6).svg';
+import workPlanDesignItemSeven from '/src/assets/svg/workPlanDesign (7).svg';
+
+import resultDesignOne from '/src/assets/svg/workPlanDesign (1).svg';
+import resultDesignTwo from '/src/assets/svg/workPlanDesign (2).svg';
+import resultDesignThree from '/src/assets/svg/workPlanDesign (3).svg';
+import resultDesignFour from '/src/assets/svg/workPlanDesign (4).svg';
+
 export default {
     DataForIntsagramOne,
     DataForIntsagramTwo,
@@ -48,4 +76,31 @@ export default {
     ProjectFive,
     ProjectFour,
     ProjectSix,
+
+    EtapOne,
+    EtapTwo,
+    EtapThree,
+    EtapFour,
+    EtapFive,
+
+    FeedbackImage,
+    FeedbackAvatar,
+
+    HouseSvg,
+    sandClockSvg,
+    awardSvg,
+    likeSvg,
+
+    workPlanDesignItemOne,
+    workPlanDesignItemTwo,
+    workPlanDesignItemThree,
+    workPlanDesignItemFour,
+    workPlanDesignItemFive,
+    workPlanDesignItemSix,
+    workPlanDesignItemSeven,
+
+    resultDesignOne,
+    resultDesignTwo,
+    resultDesignThree,
+    resultDesignFour,
 }
