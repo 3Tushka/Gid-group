@@ -135,6 +135,27 @@ const team = [
     },
 ]
 
+const employee = [
+    {
+        image: images.employeeOne,
+        name: "Олександр Мамай",
+        position: "Арт-директор GID",
+        text: "20 років в ремонтній компанії"
+    },
+    {
+        image: images.employeeTwo,
+        name: "Сергій Геращнеко",
+        position: "Дизайнер ",
+        text: "20 років в ремонтній компанії"
+    },
+    {
+        image: images.employeeThree,
+        name: "Маргарита Тищенко",
+        position: "3D-візуалізатор",
+        text: "20 років в ремонтній компанії"
+    },
+]
+
 const etapRepair = [
     {
         image: images.EtapOne,
@@ -343,4 +364,158 @@ const resultDesign = [
         text: "Унікальні умови"
     },
 ]
-export default { projects, instagramBlog, quizQuestions, squareOptions, team, etapRepair, feedbackData, infoRepair, infoDesign, resultData, workPlanDesign, resultDesign };
+
+const servicesDesign = [
+    {
+        image: images.designItemOne,
+        title: "Визначення стилю",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+
+    {
+        image: images.designItemTwo,
+        title: "Визначення кольору",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+
+    {
+        image: images.designItemThree,
+        title: "Планувальні питання",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+
+    {
+        image: images.designItemFour,
+        title: "Бюджет",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+
+    {
+        image: images.designItemFive,
+        title: "Матеріали та меблі",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+
+    {
+        image: images.designItemSix,
+        title: "Візуалізація проекту",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+
+    {
+        image: images.designItemSeven,
+        title: "Креслення",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+
+    {
+        image: images.designItemEight,
+        title: "Нагляд над процесом",
+        text: "Переносим затверджений дизайн інтер'єру на папері. В результаті ви отримуєте комплект дизайнерських документів: будівельні креслення, фотореалістичні візуалізації, і необхідні специфікації."
+    },
+]
+
+const accordeonCleaning = [
+    {
+        image: images.accordeonCleaningItemOne,
+        text: "Декоративні покриття"
+    },
+
+    {
+        image: images.accordeonCleaningItemTwo,
+        text: "Монтаж"
+    },
+]
+
+const accordeonEngeenier = [
+    {
+        image: images.accordeonEngiItemOne,
+        text: "Опалення",
+    },
+
+    {
+        image: images.accordeonEngiItemTwo,
+        text: "Водопостачання",
+    },
+
+    {
+        image: images.accordeonEngiItemThree,
+        text: "Електрохарчування",
+    },
+
+    {
+        image: images.accordeonEngiItemFour,
+        text: "Захистний лічильник",
+    },
+
+    {
+        image: images.accordeonEngiItemFive,
+        text: "Кондиціонування",
+    },
+]
+
+const accordeonFinish = [
+    {
+        image: images.accordeonFinishItemOne,
+        text: "Вибір меблів"
+    },
+    {
+        image: images.accordeonFinishItemTwo,
+        text: "Декорування"
+    },
+    {
+        image: images.accordeonFinishItemOne,
+        text: "Прибирання"
+    },
+]
+
+const accordeonPreCleaning = [
+    {
+        image: images.accordeonPreCleaningItemOne,
+        text: "Гіпсокартонні роботи",
+    },
+
+    {
+        image: images.accordeonPreCleaningItemTwo,
+        text: "Шпаклювання",
+    },
+
+    {
+        image: images.accordeonPreCleaningItemThree,
+        text: "Напольне покриття",
+    },
+
+    {
+        image: images.accordeonPreCleaningItemFour,
+        text: "Двері схованого монтажу",
+    },
+
+    {
+        image: images.accordeonPreCleaningItemFive,
+        text: "Встановлення карнізів та моделінг елементів",
+    },
+]
+
+const accordeonStages = [
+    {
+        image: images.accordeonStagesItemOne,
+        text: "Демонтаж"
+    },
+
+    {
+        image: images.accordeonStagesItemTwo,
+        text: "Штукатурка потолку та стін"
+    },
+
+    {
+        image: images.accordeonStagesItemThree,
+        text: "Стяжка полів"
+    },
+
+    {
+        image: images.accordeonStagesItemFour,
+        text: "Звукоізоляція"
+    },
+]
+
+export default { accordeonCleaning, accordeonEngeenier, accordeonStages, accordeonPreCleaning, accordeonFinish, servicesDesign, employee, projects, instagramBlog, quizQuestions, squareOptions, team, etapRepair, feedbackData, infoRepair, infoDesign, resultData, workPlanDesign, resultDesign };

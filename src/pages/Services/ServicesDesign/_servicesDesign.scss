@@ -1,0 +1,65 @@
+@import "/src/utils/colors";
+@import "/src/utils/fonts";
+
+.serviceDesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid $color-gray-white;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        // border-top: 1px solid $color-gray;
+        width: 100%;
+
+        font-family: $roboto-font;
+        border-top: 1px solid $color-gray-white;
+    }
+
+    &__title {
+        padding: 1.81rem 0;
+        border-right: 1px solid $color-gray-white;
+        width: 100%;
+
+        text-align: end;
+
+        span {
+            width: 23rem;
+            padding: 0.81rem 1.75rem 0.81rem 1.25rem;
+
+            background-color: $color-yellow;
+
+            font-size: 1.75rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    &__text {
+        padding: 1.81rem 2rem;
+        width: 100%;
+
+        height: 200px;
+
+        span {
+            color: $color-gray;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 197.687%; /* 2.47106rem */
+        }
+    }
+
+    &__image {
+        padding: 1.81rem 1.25rem;
+        border-left: 1px solid $color-gray-white;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}

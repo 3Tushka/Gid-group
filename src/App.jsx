@@ -6,6 +6,9 @@ import { LandscapeDesign } from './pages/LandscapeDesign/LandscapeDesign';
 import { Projects } from './pages/Projects/Projects';
 import { Buildings } from './pages/Buildings/Buildings';
 import { Repairement } from './pages/Repairement/Repairement';
+import { Contact } from './pages/Contact/Contact';
+import { OurTeam } from './pages/OurTeam/OurTeam';
+import { Services } from './pages/Services/Services';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -24,6 +27,9 @@ function App() {
           <Route path='/Projects' element={<Projects />} />
           <Route path='/Buildings' element={<Buildings />} />
           <Route path='/Repairement' element={<Repairement />} />
+          <Route path='/Contact' element={<Contact />} />
+          <Route path='/OurTeam' element={<OurTeam />} />
+          <Route path='/Services' element={<Services />} />
         </Routes>
       </BrowserRouter>
     </>

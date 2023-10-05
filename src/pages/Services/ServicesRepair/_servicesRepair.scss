@@ -1,0 +1,31 @@
+@import "/src/utils/colors";
+@import "/src/utils/fonts";
+
+.servicesRepair {
+    &__accordeon {
+    }
+
+    &__summary {
+        justify-content: none;
+    }
+
+    .MuiAccordionSummary-content {
+        justify-self: unset;
+    }
+
+    &__title {
+        background-color: $color-yellow;
+
+        color: #000;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__details {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}

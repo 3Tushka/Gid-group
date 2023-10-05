@@ -6,6 +6,8 @@ import SocialMedia from '../SocialMedia/SocialMedia';
 
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
 
     const scrollToTop = () => {
@@ -45,7 +47,7 @@ const Footer = () => {
                             <a href=""><span>Про Нас</span></a>
                         </li>
                         <li className="footer__item">
-                            <a href=""><span>Наша команда</span></a>
+                            <Link to="/OurTeam">Наша команда</Link>
                         </li>
                         <li className="footer__item">
                             <a href=""><span>Історія</span></a>
@@ -72,7 +74,7 @@ const Footer = () => {
 
                     <ul className="footer__column">
                         <div className="footer__column__title">
-                            <span>Послуги</span>
+                            <Link to="/Services">Послуги</Link>
                         </div>
                         <li className="footer__item">
                             <a href=""><span>Квартири</span></a>
@@ -90,7 +92,7 @@ const Footer = () => {
 
                     <ul className="footer__column">
                         <div className="footer__column__title">
-                            <span>Контакти</span>
+                            <Link to="/Contact">Контакти</Link>
                         </div>
                         <li className="footer__item">
                             <a href=""><span>+38-066-306-4330</span></a>
